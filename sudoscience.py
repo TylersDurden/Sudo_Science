@@ -12,6 +12,15 @@ cache = {}
 logger = logging.getLogger(__name__)
 
 
+def swap(fname, destroy):
+    data = []
+    for line in open(fname, 'r').readlines():
+        data.append(line.replace('\n',''))
+    if destroy:
+        os.system('rm '+fname)
+    return data
+
+
 def get_page(dir, file):
     filename = (file)
 
@@ -51,13 +60,17 @@ def switch():
     os.system('echo $('+cmd+")")
     print 'WAS CLICKED at :\n '
     data = ''
-    for line in open('user.txt','r').readlines():
-        data += line + ' \n'
-    os.system('rm user.txt')
+    for line in swap('user.txt', True):
+        data += line
     return 'CLICKED BY ' + data
 
 
+@app.route('/Automata/')
+def play():
+    return render_template('video_player.html')
+
 ###########################################################################################
+
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
