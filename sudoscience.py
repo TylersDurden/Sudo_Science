@@ -8,7 +8,6 @@ if os.name != 'nt':
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
-
 cache = {}
 logger = logging.getLogger(__name__)
 
@@ -40,19 +39,25 @@ def hello(name=None):
     return render_template('hello.html', name=name)
 
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/')
 def login():
-    # the code below is executed if the request method
-    # was GET or the credentials were invalid
     return render_template('sample.html')
 
-@app.route('/')
-def switch(name=None):
-    dataout = ''
-    dataout += 'OS: ' + os.name+'\n'
-    
+
+@app.route('/cell/')
+def switch():
+    cmd = "GET https://ipinfo.io/$(GET 'https://api.ipify.org?format=json' | jq -r .'ip')"
+    os.system(cmd+'>>user.txt')
+    os.system('echo $('+cmd+")")
+    print 'WAS CLICKED at :\n '
+    data = ''
+    for line in open('user.txt','r').readlines():
+        data += line + ' \n'
+    os.system('rm user.txt')
+    return 'CLICKED BY ' + data
 
 
+###########################################################################################
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))

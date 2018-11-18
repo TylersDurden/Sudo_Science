@@ -40,4 +40,5 @@ Grab the GOL.py source above and run:
   or enter 50 for regular speed. 
   
 ## Some more detail on how this simulation works:
-![!](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/CellularAutomata.png)
+![Example](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/CellularAutomata.png)
+
