@@ -38,3 +38,6 @@ Grab the GOL.py source above and run:
   
   Choose a time step of 100 for slowest playback,
   or enter 50 for regular speed. 
+  
+## Some more detail on how this simulation works:
+[Example of simple python to build cells and neighborhoods.](https://github.com/TylersDurden/Sudo_Science/blob/master/Automata/CellularAutomata.png)
