@@ -40,4 +40,4 @@ Grab the GOL.py source above and run:
   or enter 50 for regular speed. 
   
 ## Some more detail on how this simulation works:
-[Example of simple python to build cells and neighborhoods.](https://github.com/TylersDurden/Sudo_Science/blob/master/Automata/CellularAutomata.png)
+![!](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/CellularAutomata.png)
