@@ -46,3 +46,5 @@ On the left is the bit plane universe of Conway's game, while
 the right shows the 'neighborhood', or weight of cell/pixel when
 convolved with a 3x3 matrix of ones. 
 
+Watch this to see the Game of Life, and more complex automata, in [action](https://youtu.be/8Bcwa-s-jtM) 
+
