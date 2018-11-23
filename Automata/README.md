@@ -42,3 +42,7 @@ Grab the GOL.py source above and run:
 ## Some more detail on how this simulation works:
 ![Example](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/CellularAutomata.png)
 
+On the left is the bit plane universe of Conway's game, while
+the right shows the 'neighborhood', or weight of cell/pixel when
+convolved with a 3x3 matrix of ones. 
+
