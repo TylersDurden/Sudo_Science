@@ -63,13 +63,15 @@ One of which is this interesting network of blobs, initially seeded with random 
 On the other hand, giving a well defined initial state can also be interesting, as rules that 
 are carefully designed can evolve into very interesting systems. 
 
+## FractalFire.py
 Take for example the `fractal_fire.py` design. It seeds the automata world initially with a window
 that is 3/4 white with the remainder being a black bar at the bottom (like a log in the fire place). 
 By applying a neighbordhood much like the Game of Life, only changing the rules, you can get a system
 that spreads a somewhat unique and interesting pattern across the screen like flames. 
 
 [Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/fractalFire.mp4) 
- 
+
+## InkBlots.py
 Perhaps even more interesting, or at least surprising, is the ability of automata to take the random noise
 and reliably produce a similar kind of pattern. In the `simple.py` Automata, a random field of 0s and 1s is
 given, but *will always* produce a similar kind of pattern where the random dots cluster together and form blobs
@@ -78,3 +80,10 @@ not only clusters the blobs in space, but also clusters them by time. This allow
 together to grow faster than weaker blobs. The result is a swelling effect of already randomly clustered blobs. 
  
 [Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/InkBlots.mp4)
+
+# Automata Image Processing 
+While it is fun to play in the theoretical space of bit planes, and simulate processes with mappings of
+black and white squares, you can also yield pretty amazing results when you feed a well crafter Automata
+actually images, or **vast** bitplanes of enormous dynamic range in the cellular automata world. 
+
+  
