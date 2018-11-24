@@ -57,5 +57,16 @@ A great example of this is the bacteria.py program in the Automata/ folder.
 Run `python bacteria.py` and you will see all kinds of weird viral like structures.
 One of which is this interesting network of blobs, initially seeded with random 1s and
 0s. 
+
 ![BLOBBY](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/bacterial1.png)
+
+On the other hand, giving a well defined initial state can also be interesting, as rules that 
+are carefully designed can evolve into very interesting systems. 
+
+Take for example the `fractal_fire.py` design. It seeds the automata world initially with a window
+that is 3/4 white with the remainder being a black bar at the bottom (like a log in the fire place). 
+By applying a neighbordhood much like the Game of Life, only changing the rules, you can get a system
+that spreads a somewhat unique and interesting pattern across the screen like flames. 
+
+![Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/fractalFire.mp4) 
  
