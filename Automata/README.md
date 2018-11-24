@@ -68,5 +68,5 @@ that is 3/4 white with the remainder being a black bar at the bottom (like a log
 By applying a neighbordhood much like the Game of Life, only changing the rules, you can get a system
 that spreads a somewhat unique and interesting pattern across the screen like flames. 
 
-[Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/fractalFire.mp4) 
+![Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/fractalFire.mp4) 
  
