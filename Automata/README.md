@@ -48,3 +48,14 @@ convolved with a 3x3 matrix of ones.
 
 Watch this to see the Game of Life, and more complex automata, in [action](https://youtu.be/8Bcwa-s-jtM) 
 
+# More Complex Automata
+You can do much more with automata than may at first seem apparent. 
+One of the hidden powers automata inherently have is the ability to
+apply a pattern of some sort to any bit plane globally. 
+
+A great example of this is the bacteria.py program in the Automata/ folder. 
+Run `python bacteria.py` and you will see all kinds of weird viral like structures.
+One of which is this interesting network of blobs, initially seeded with random 1s and
+0s. 
+![BLOBBY](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/bacterial1.png)
+ 
