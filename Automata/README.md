@@ -58,7 +58,7 @@ Run `python bacteria.py` and you will see all kinds of weird viral like structur
 One of which is this interesting network of blobs, initially seeded with random 1s and
 0s. 
 
-![BLOBBY](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Automata/Images/bacterial1.png)
+![BLOBBY](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Images/bacterial1.png)
 
 On the other hand, giving a well defined initial state can also be interesting, as rules that 
 are carefully designed can evolve into very interesting systems. 
