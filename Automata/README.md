@@ -86,4 +86,6 @@ While it is fun to play in the theoretical space of bit planes, and simulate pro
 black and white squares, you can also yield pretty amazing results when you feed a well crafter Automata
 actually images, or **vast** bitplanes of enormous dynamic range in the cellular automata world. 
 
-  
+First we have to consider whether or not to feed in a color image, or a black and white image, or a preprocessed image 
+that is color or even black and white. Luckily, it is very easy to swap and modify image color schemes in python!
+![ImageSubtraction](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Images/ColorSubtract.png)  
