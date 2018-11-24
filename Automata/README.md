@@ -68,7 +68,7 @@ that is 3/4 white with the remainder being a black bar at the bottom (like a log
 By applying a neighbordhood much like the Game of Life, only changing the rules, you can get a system
 that spreads a somewhat unique and interesting pattern across the screen like flames. 
 
-![Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/fractalFire.mp4) 
+[Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/fractalFire.mp4) 
  
 Perhaps even more interesting, or at least surprising, is the ability of automata to take the random noise
 and reliably produce a similar kind of pattern. In the `simple.py` Automata, a random field of 0s and 1s is
@@ -77,4 +77,4 @@ which continue to grow. In this simulation, I did two layers of this same techni
 not only clusters the blobs in space, but also clusters them by time. This allows the blobs that have managed to stay
 together to grow faster than weaker blobs. The result is a swelling effect of already randomly clustered blobs. 
  
-![Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/InkBlots.mp4)
+[Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/InkBlots.mp4)
