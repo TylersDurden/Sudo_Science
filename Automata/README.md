@@ -89,3 +89,10 @@ actually images, or **vast** bitplanes of enormous dynamic range in the cellular
 First we have to consider whether or not to feed in a color image, or a black and white image, or a preprocessed image 
 that is color or even black and white. Luckily, it is very easy to swap and modify image color schemes in python!
 ![ImageSubtraction](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Images/ColorSubtract.png)  
+
+Because you can essentially have edge detection in a single iteration with the correct cellular automata rules and 
+neighborhood definition, by maintaining state variables, or in the case of `aip.py` (Automata Image Processing) using
+color itself as the state variable, attributes can be traced and manipulated with pretty simple code that can produce 
+quite dramatic outputs. 
+
+![TrippyBubbles]([Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4))
