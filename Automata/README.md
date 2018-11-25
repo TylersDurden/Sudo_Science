@@ -95,4 +95,4 @@ neighborhood definition, by maintaining state variables, or in the case of `aip.
 color itself as the state variable, attributes can be traced and manipulated with pretty simple code that can produce 
 quite dramatic outputs. 
 
-![TrippyBubbles]([Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4))
+[Bubbles](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4)
