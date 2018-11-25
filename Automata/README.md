@@ -93,6 +93,12 @@ that is color or even black and white. Luckily, it is very easy to swap and modi
 Because you can essentially have edge detection in a single iteration with the correct cellular automata rules and 
 neighborhood definition, by maintaining state variables, or in the case of `aip.py` (Automata Image Processing) using
 color itself as the state variable, attributes can be traced and manipulated with pretty simple code that can produce 
-quite dramatic outputs. 
+quite dramatic outputs.
 
+Here are two examples:
+
+![Planet](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Images/bubbs.png)
+ 
+ 
+Video: 
 [Bubbles](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4)
