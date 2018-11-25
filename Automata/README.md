@@ -102,3 +102,5 @@ Here are two examples:
  
 Video: 
 [Bubbles](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4)
+
+Touched up Even more, I give you: [Bubbles!](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/bubbles2.mp4)

@@ -1,15 +1,21 @@
 import sys, time, resource, numpy as np, scipy.ndimage as ndi
 import matplotlib.pyplot as plt, matplotlib.animation as ani
+from matplotlib.animation import FFMpegWriter
 
 
-def render(matrices, speedOfLife):
+def render(matrices, speedOfLife,save,name):
     f = plt.figure()
     reel = []
     for matrix in matrices:
         frame = plt.imshow(matrix,'gray_r')
         reel.append([frame])
-    a = ani.ArtistAnimation(f, reel, interval=speedOfLife,blit=True,repeat_delay=1000)
+    a = ani.ArtistAnimation(f, reel, interval=speedOfLife,blit=True,repeat_delay=100)
+
+    if save:
+        writer = FFMpegWriter(fps=35, metadata=dict(artist='Me'), bitrate=1800)
+        a.save(name, writer=writer)
     plt.show()
+
 
 
 def check_mem_usage():
@@ -65,9 +71,9 @@ def edgy(image, iavg, filter, ncycles):
 def edge(state, world, avg):
     ii = 0
     for cell in world:
-        if cell <= 6 and state[ii]>200:
-            state[ii] = 10
-        if cell > 6:
+        if cell < 6 and state[ii]>200:
+            state[ii] += 1
+        if cell >= 7:
             state[ii] -= 10
         ii += 1
     return state
@@ -104,21 +110,33 @@ def main():
                      [3,2,2,2,3],
                      [3,3,3,3,3]])
 
+    box3 = np.array([[3,3,3,3,3,3],
+                     [3,2,2,2,2,3],
+                     [3,2,1,0,2,3],
+                     [3,2,0,1,2,3],
+                     [3,2,2,2,2,3],
+                     [3,3,3,3,3,3]])
+    box4 = [[3,2,1,2,3],
+            [2,1,1,1,2],
+            [1,1,0,1,1],
+            [2,1,1,1,2],
+            [3,2,1,2,3]]
 
     test_avg = np.array(test_image2[:,:,0]).mean()
     test = test_image2[:, :, 0]
     t0 = time.time()
-    reel = edgy(test,test_avg,box1,50)
+    reel = edgy(test,test_avg,box4,55)
     t1 = time.time()
-    reel2 = edgy(test_image[:,:,0],test_image[:,:,2].mean(), box1, 50)
+    reel2 = edgy(test_image[:,:,0],test_image[:,:,2].mean(), box4, 55)
     t2 = time.time()
     print "Bubbles Simulation Finished in " + str(t1-t0)+"s"
     print "Earth Simulation Finished in " + str(t2-t1)+"s"
     print "*** Beginning Rendering"
-    render(reel,100)
+    render(reel,90,True,'../bubbles2.mp4')
     t3 = time.time()
-    render(reel2,100)
+    render(reel2,80,False,'')
     t4 = time.time()
+
 
 if __name__ == '__main__':
     main()
