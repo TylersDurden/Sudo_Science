@@ -71,6 +71,11 @@ that spreads a somewhat unique and interesting pattern across the screen like fl
 
 [Fractal_Fire](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/fractalFire.mp4) 
 
+More Advanced Fractal Fires!
+
+[FractallyFired](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Animate/fractalFires.mp4)
+
+
 ## InkBlots.py
 Perhaps even more interesting, or at least surprising, is the ability of automata to take the random noise
 and reliably produce a similar kind of pattern. In the `simple.py` Automata, a random field of 0s and 1s is
@@ -80,6 +85,8 @@ not only clusters the blobs in space, but also clusters them by time. This allow
 together to grow faster than weaker blobs. The result is a swelling effect of already randomly clustered blobs. 
  
 [Ink_Blots](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/InkBlots.mp4)
+
+
 
 # Automata Image Processing 
 While it is fun to play in the theoretical space of bit planes, and simulate processes with mappings of
@@ -104,3 +111,4 @@ Video:
 [Bubbles](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/AutomataImageProcessing.mp4)
 
 Touched up Even more, I give you: [Bubbles!](https://raw.githubusercontent.com/TylersDurden/Sudo_Science/master/Videos/bubbles2.mp4)
+

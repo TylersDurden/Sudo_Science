@@ -49,16 +49,26 @@ def build_log(dims):
             canvas[pixel] = 1
     return np.rot90(np.rot90(canvas.reshape((width, height))))
 
-
 def main():
     spark = [[2, 2, 2], [2, 1, 2], [2, 2, 2]]
     nFrames = 220
-    gas = build_log([100, 100])
+    if len(sys.argv) < 2:
+        gas = build_log([100, 100])
 
-    s0 = time.time()
-    flames = burn(gas, nFrames, spark)
-    print str(nFrames) + " Frame Simulation finished ["+str(time.time() - s0)+"s]"
-    render(flames, False, 70)
+        s0 = time.time()
+        flames = burn(gas, nFrames, spark)
+        print str(nFrames) + " Frame Simulation finished [" + str(time.time() - s0) + "s]"
+        render(flames, False, 70)
+    else:
+        nFrames = 255
+        if '-block' in sys.argv:
+            gas = np.zeros((200,200))
+            gas[100:110,100:110] = 1
+            s0 = time.time()
+            flames = burn(gas, nFrames, spark)
+            print str(nFrames) + " Frame Simulation finished [" + str(time.time() - s0) + "s]"
+            render(flames, False, 35)
+
 
 
 if __name__ == '__main__':
