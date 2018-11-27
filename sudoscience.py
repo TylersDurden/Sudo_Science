@@ -1,5 +1,5 @@
 import os, yaml, logging
-from flask import Flask, render_template, Markup
+from flask import Flask, render_template, Markup, request
 if os.name != 'nt':
     try:
         import markdown, logging
@@ -10,6 +10,9 @@ app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 cache = {}
 logger = logging.getLogger(__name__)
+
+
+USERS = []
 
 
 def swap(fname, destroy):
@@ -68,6 +71,28 @@ def switch():
 @app.route('/Automata/')
 def play():
     return render_template('video_player.html')
+
+
+@app.route('/login')
+def flask_captive():
+    return render_template('login.html')
+
+
+@app.route('/portal/', methods=['POST','GET'])
+def flask_portal():
+    if request.method == 'POST':
+        Credentials = request.form
+        print "ATTEMPTED LOGIN:"
+        print "User: "+Credentials['password']
+        print "Password:"+Credentials['name']
+        for line in swap('user.txt',True):
+            print '*  '+line
+        USERS.append(Credentials)
+        if len(Credentials['password'])<2 or len(Credentials['name'])<2:
+            return render_template('login.html')
+        else:
+            return "WELCOME "+Credentials['name']
+
 
 ###########################################################################################
 

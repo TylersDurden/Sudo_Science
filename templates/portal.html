@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>  LOGGING YOU IN </title>
+</head>
+<body>
+    <head>
+        <title>
+            {% if name %}
+            <h1>Hello {{ name }}!</h1>
+            {% else %}
+            <h1>Hello, World!</h1>
+            {% endif %}
+        </title>
+        <meta charset=utf-8>
+    </head>
+</body>
+</html>
