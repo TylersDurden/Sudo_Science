@@ -104,6 +104,7 @@ def main():
     box1 = np.array([[1,1,1],
                      [1,1,1],
                      [1,1,1]])
+
     box2 = np.array([[3,3,3,3,3],
                      [3,2,2,2,3],
                      [3,2,1,2,3],
@@ -116,6 +117,7 @@ def main():
                      [3,2,0,1,2,3],
                      [3,2,2,2,2,3],
                      [3,3,3,3,3,3]])
+
     box4 = [[3,2,1,2,3],
             [2,1,1,1,2],
             [1,1,0,1,1],
@@ -129,12 +131,14 @@ def main():
     t1 = time.time()
     reel2 = edgy(test_image[:,:,0],test_image[:,:,2].mean(), box4, 55)
     t2 = time.time()
+
     print "Bubbles Simulation Finished in " + str(t1-t0)+"s"
     print "Earth Simulation Finished in " + str(t2-t1)+"s"
     print "*** Beginning Rendering"
-    render(reel,90,True,'../bubbles2.mp4')
+
+    render(reel, 90, True, '../bubbles2.mp4')
     t3 = time.time()
-    render(reel2,80,False,'')
+    render(reel2, 80, False, '')
     t4 = time.time()
 
 
