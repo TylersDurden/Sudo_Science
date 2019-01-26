@@ -18,6 +18,8 @@ I also look at Diffusion-Limited Aggregation, which uses many random walkers who
 "die in place" if they run out of steps or collide with another particle. This produces 
 interesting systems that seem to grow external structures off of them. 
 
+![dla](https://raw.githubusercontent.com/TylersDurden/Robots/master/Images/Lattice.png)
+
 Lastly, I look at creating a random walk agent armed with some automata-like rules to try 
 and make some basic decisions about the next step against the random decisions it's been
 generating. 
