@@ -25,3 +25,9 @@ generating.
 As previously states, these projects can be found in the ![Robots](https://tylersdurden.github.io/Robots/)
 repo.
 
+## Text/Image Processing 
+I want to experiment with how fonts are rendered various related aspects of image processing
+like dithering and filterting. These projects can be found in the ![insight](https://github.com/TylersDurden/insight) 
+repository.
+
+![example_text](https://raw.githubusercontent.com/TylersDurden/insight/master/TypeFace.png)
