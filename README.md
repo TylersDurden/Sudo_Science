@@ -22,3 +22,6 @@ Lastly, I look at creating a random walk agent armed with some automata-like rul
 and make some basic decisions about the next step against the random decisions it's been
 generating. 
 
+As previously states, these projects can be found in the ![Robots](https://tylersdurden.github.io/Robots/)
+repo.
+
